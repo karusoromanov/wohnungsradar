@@ -227,7 +227,9 @@ __WH_DATA__
   };
   function bezKey(b) { return (b || "").slice(0, 2); }
   function bezName(b) {
-    var k = bezKey(b); return BEZ[k] ? BEZ[k].name : (b || "").replace(/^\d+\.\s*/, "");
+    var k = bezKey(b);
+    if (BEZ[k]) return k.replace(/^0/, "") + ". " + BEZ[k].name;
+    return (b || "").trim();
   }
   function bezVar(b) { var k = bezKey(b); return BEZ[k] ? BEZ[k].v : "--muted"; }
 
@@ -293,7 +295,7 @@ __WH_DATA__
     b.setAttribute("aria-pressed", "true");
     b.dataset.k = k;
     b.innerHTML = '<span class="dot" style="background:var(' + BEZ[k].v + ')"></span>' +
-                  esc(BEZ[k].name) + ' <span style="opacity:.6">' +
+                  esc(k.replace(/^0/, "") + ". " + BEZ[k].name) + ' <span style="opacity:.6">' +
                   listings.filter(function (x) { return bezKey(x.bez) === k; }).length + '</span>';
     b.addEventListener("click", function () {
       active[k] = !active[k];
