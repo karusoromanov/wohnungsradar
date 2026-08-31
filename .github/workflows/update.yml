@@ -1,0 +1,42 @@
+name: Wohnungsradar aktualisieren
+
+on:
+  schedule:
+    # 07:00 UTC = 09:00 Wien (Sommerzeit). Ende Oktober bis Ende März wäre das 08:00 Wien
+    # -> dann bei Bedarf auf "0 8 * * *" ändern.
+    - cron: "0 7 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wohnungsradar
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Node einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: willhaben abrufen und Seite bauen
+        run: node scripts/build.mjs
+
+      - name: Änderungen committen
+        run: |
+          git config user.name "wohnungsradar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json docs/index.html
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen – nichts zu committen."
+          else
+            git commit -m "Update $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

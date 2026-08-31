@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Wohnungsradar Wien</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%A0%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --paper:   #f5f4ef;
+    --surface: #fffdf8;
+    --ink:     #1b1d22;
+    --muted:   #6f737c;
+    --faint:   #9a9da6;
+    --line:    #e4e1d8;
+    --accent:  #1f6a74;
+    --accent-ink: #12474e;
+    --new:     #b0501b;
+    --new-bg:  #f7e9dd;
+    --d-fav:   #8a6a34;
+    --d-wie:   #35668a;
+    --d-sim:   #567a42;
+    --d-mar:   #8a3a5e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #141619;
+      --surface: #1b1e22;
+      --ink:     #e9e8e2;
+      --muted:   #9aa0a9;
+      --faint:   #6b7079;
+      --line:    #2c3036;
+      --accent:  #5cb7c2;
+      --accent-ink: #a7dfe5;
+      --new:     #e79162;
+      --new-bg:  #33241a;
+      --d-fav:   #c9a668;
+      --d-wie:   #77a9cd;
+      --d-sim:   #93bd7c;
+      --d-mar:   #cf7fa3;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #141619;
+    --surface: #1b1e22;
+    --ink:     #e9e8e2;
+    --muted:   #9aa0a9;
+    --faint:   #6b7079;
+    --line:    #2c3036;
+    --accent:  #5cb7c2;
+    --accent-ink: #a7dfe5;
+    --new:     #e79162;
+    --new-bg:  #33241a;
+    --d-fav:   #c9a668;
+    --d-wie:   #77a9cd;
+    --d-sim:   #93bd7c;
+    --d-mar:   #cf7fa3;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 0 20px 96px; }
+
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .head-inner {
+    max-width: 780px; margin: 0 auto; padding: 14px 20px 12px;
+    display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  }
+  .brand {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    font-weight: 600; font-size: 21px; letter-spacing: -0.01em;
+    color: var(--ink); display: flex; align-items: center; gap: 9px;
+  }
+  .blip {
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent);
+    flex: none;
+  }
+  .head-meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11.5px; color: var(--muted); text-align: right;
+    display: flex; flex-direction: column; gap: 1px;
+    font-variant-numeric: tabular-nums;
+  }
+  .head-meta b { color: var(--ink); font-weight: 500; }
+
+  .filterline {
+    max-width: 780px; margin: 0 auto; padding: 9px 20px;
+    font-size: 12px; color: var(--muted);
+    border-bottom: 1px solid var(--line);
+    display: flex; gap: 8px 14px; align-items: center; flex-wrap: wrap;
+  }
+  .filterline .crit { font-family: "IBM Plex Mono", monospace; font-size: 11px; }
+
+  .chips { display: flex; gap: 7px; flex-wrap: wrap; padding: 16px 0 4px; }
+  .chip {
+    font: inherit; font-size: 12px; cursor: pointer;
+    padding: 4px 11px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--surface); color: var(--muted);
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: border-color .12s, color .12s, background .12s;
+  }
+  .chip:hover { color: var(--ink); }
+  .chip[aria-pressed="true"] { border-color: var(--accent); color: var(--accent-ink); background: color-mix(in srgb, var(--accent) 10%, var(--surface)); }
+  .chip .dot { width: 7px; height: 7px; border-radius: 50%; flex: none; }
+  .chip:focus-visible, a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+  .daygrp { margin-top: 30px; }
+  .dayhead {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500; font-size: 15px; color: var(--muted);
+    display: flex; align-items: center; gap: 10px; margin-bottom: 2px;
+  }
+  .dayhead::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .dayhead .n { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--faint); }
+  .dayhead.is-new { color: var(--new); }
+  .dayhead.is-new::after { background: color-mix(in srgb, var(--new) 40%, var(--line)); }
+
+  .row {
+    display: block; padding: 15px 0 14px;
+    border-top: 1px solid var(--line);
+    text-decoration: none; color: inherit;
+  }
+  .daygrp .row:first-of-type { border-top: none; }
+  .row:hover .rtitle { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 2px; }
+  .row:hover { background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 5%, transparent), transparent 70%); }
+
+  .rtop { display: flex; align-items: flex-start; gap: 12px; }
+  .rtitle {
+    font-weight: 600; font-size: 15px; line-height: 1.4; color: var(--ink);
+    margin: 0; flex: 1; text-wrap: pretty;
+  }
+  .rprice {
+    font-family: "IBM Plex Mono", monospace; font-weight: 500;
+    font-size: 14px; color: var(--ink); white-space: nowrap;
+    font-variant-numeric: tabular-nums; padding-top: 1px;
+  }
+  .rmeta {
+    margin-top: 7px; display: flex; align-items: center; gap: 7px 12px; flex-wrap: wrap;
+    font-size: 12.5px; color: var(--muted);
+  }
+  .rmeta .m { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; }
+  .bez { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; color: var(--ink); }
+  .bez .dot { width: 7px; height: 7px; border-radius: 50%; flex: none; }
+  .tag {
+    font-size: 10.5px; letter-spacing: .04em; text-transform: uppercase;
+    padding: 1px 6px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted);
+  }
+  .tag.priv { border-color: color-mix(in srgb, var(--d-sim) 45%, var(--line)); color: var(--d-sim); }
+  .tag.new {
+    color: var(--new); border-color: color-mix(in srgb, var(--new) 45%, var(--line));
+    background: var(--new-bg); font-weight: 600;
+  }
+  .rwhen { color: var(--faint); font-family: "IBM Plex Mono", monospace; font-size: 11.5px; margin-left: auto; }
+
+  .empty { margin-top: 40px; text-align: center; color: var(--muted); font-size: 14px; }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--faint); line-height: 1.7; }
+  footer a { color: var(--muted); }
+
+  @media (max-width: 520px) {
+    .rprice { font-size: 13px; }
+    .head-inner { padding-bottom: 10px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head-inner">
+    <div class="brand"><span class="blip" aria-hidden="true"></span>Wohnungsradar</div>
+    <div class="head-meta">
+      <span><b id="count">&ndash;</b> Inserate &middot; <span id="win">10</span> Tage</span>
+      <span>Stand <b id="stamp">&ndash;</b></span>
+    </div>
+  </div>
+</header>
+<div class="filterline">
+  <span>Suchagent &bdquo;Mietwohnungen&ldquo;</span>
+  <span class="crit" id="crit"></span>
+</div>
+
+<div class="wrap">
+  <div class="chips" id="chips" role="group" aria-label="Nach Bezirk filtern"></div>
+  <main id="list"></main>
+  <p class="empty" id="empty" hidden>Keine Inserate im gew&auml;hlten Filter.</p>
+  <footer id="foot"></footer>
+</div>
+
+<script id="wh-data" type="application/json">
+__WH_DATA__
+</script>
+
+<script>
+(function () {
+  "use strict";
+  var TZ = "Europe/Vienna";
+  var raw = document.getElementById("wh-data").textContent;
+  var data;
+  try { data = JSON.parse(raw); } catch (e) { data = { listings: [] }; }
+  var listings = Array.isArray(data.listings) ? data.listings.slice() : [];
+
+  var BEZ = {
+    "04": { name: "Wieden",     v: "--d-wie" },
+    "05": { name: "Margareten", v: "--d-mar" },
+    "10": { name: "Favoriten",  v: "--d-fav" },
+    "11": { name: "Simmering",  v: "--d-sim" }
+  };
+  function bezKey(b) { return (b || "").slice(0, 2); }
+  function bezName(b) {
+    var k = bezKey(b); return BEZ[k] ? BEZ[k].name : (b || "").replace(/^\d+\.\s*/, "");
+  }
+  function bezVar(b) { var k = bezKey(b); return BEZ[k] ? BEZ[k].v : "--muted"; }
+
+  function dayKey(d) { return d.toLocaleDateString("en-CA", { timeZone: TZ }); }
+
+  var lastRun = data.lastRunAt ? new Date(data.lastRunAt) : new Date(0);
+  var winDays = data.windowDays || 10;
+  var cutoff = Date.now() - winDays * 864e5;
+
+  listings = listings.filter(function (x) {
+    var t = Date.parse(x.firstSeen || x.published);
+    return isFinite(t) && t >= cutoff;
+  });
+  listings.sort(function (a, b) {
+    return Date.parse(b.firstSeen || b.published) - Date.parse(a.firstSeen || a.published);
+  });
+
+  var todayKey = dayKey(new Date());
+  var yestKey = dayKey(new Date(Date.now() - 864e5));
+
+  function dayLabel(key) {
+    if (key === todayKey) return "Heute";
+    if (key === yestKey) return "Gestern";
+    var parts = key.split("-");
+    var d = new Date(Date.UTC(+parts[0], +parts[1] - 1, +parts[2], 12));
+    return d.toLocaleDateString("de-AT", { timeZone: TZ, weekday: "short", day: "numeric", month: "short" });
+  }
+  function relTime(iso) {
+    var diff = Date.now() - Date.parse(iso);
+    var h = Math.floor(diff / 36e5);
+    if (h < 1) return "gerade eben";
+    if (h < 24) return "vor " + h + " h";
+    var d = Math.floor(h / 24);
+    return "vor " + d + " " + (d === 1 ? "Tag" : "Tagen");
+  }
+  function fmtStamp(iso) {
+    var d = new Date(iso);
+    return d.toLocaleDateString("de-AT", { timeZone: TZ, day: "2-digit", month: "2-digit" }) + " " +
+           d.toLocaleTimeString("de-AT", { timeZone: TZ, hour: "2-digit", minute: "2-digit" });
+  }
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  document.getElementById("count").textContent = listings.length;
+  document.getElementById("win").textContent = winDays;
+  document.getElementById("stamp").textContent = data.generatedAt ? fmtStamp(data.generatedAt) : "–";
+  document.getElementById("crit").textContent = (data.search && data.search.label) || "";
+
+  var active = {};
+  var order = ["10", "05", "04", "11"];
+  var present = order.filter(function (k) {
+    return listings.some(function (x) { return bezKey(x.bez) === k; });
+  });
+  var chipWrap = document.getElementById("chips");
+  present.forEach(function (k) {
+    active[k] = true;
+    var b = document.createElement("button");
+    b.className = "chip";
+    b.type = "button";
+    b.setAttribute("aria-pressed", "true");
+    b.dataset.k = k;
+    b.innerHTML = '<span class="dot" style="background:var(' + BEZ[k].v + ')"></span>' +
+                  esc(BEZ[k].name) + ' <span style="opacity:.6">' +
+                  listings.filter(function (x) { return bezKey(x.bez) === k; }).length + '</span>';
+    b.addEventListener("click", function () {
+      active[k] = !active[k];
+      b.setAttribute("aria-pressed", active[k] ? "true" : "false");
+      render();
+    });
+    chipWrap.appendChild(b);
+  });
+
+  var listEl = document.getElementById("list");
+  var emptyEl = document.getElementById("empty");
+
+  function render() {
+    var rows = listings.filter(function (x) { return active[bezKey(x.bez)]; });
+    listEl.innerHTML = "";
+    emptyEl.hidden = rows.length > 0;
+
+    var groups = [];
+    var idx = {};
+    rows.forEach(function (x) {
+      var isNew = Date.parse(x.firstSeen || x.published) >= lastRun.getTime();
+      var dk = dayKey(new Date(x.firstSeen || x.published));
+      var key = (isNew ? "NEU " : "") + dk;
+      if (!(key in idx)) { idx[key] = groups.length; groups.push({ isNew: isNew, dk: dk, items: [] }); }
+      groups[idx[key]].items.push(x);
+    });
+
+    groups.forEach(function (g) {
+      var wrap = document.createElement("section");
+      wrap.className = "daygrp";
+      var h = document.createElement("h2");
+      h.className = "dayhead" + (g.isNew ? " is-new" : "");
+      var label = g.isNew ? "Neu · " + dayLabel(g.dk) : dayLabel(g.dk);
+      h.innerHTML = esc(label) + ' <span class="n">' + g.items.length + '</span>';
+      wrap.appendChild(h);
+
+      g.items.forEach(function (x) {
+        var a = document.createElement("a");
+        a.className = "row";
+        a.href = x.url;
+        a.target = "_blank";
+        a.rel = "noopener";
+        var size = x.size ? x.size + " m²" : "– m²";
+        var isNew = Date.parse(x.firstSeen || x.published) >= lastRun.getTime();
+        a.innerHTML =
+          '<div class="rtop">' +
+            '<p class="rtitle">' + esc(x.title) + '</p>' +
+            '<span class="rprice">' + esc(x.price || "–") + '</span>' +
+          '</div>' +
+          '<div class="rmeta">' +
+            '<span class="bez"><span class="dot" style="background:var(' + bezVar(x.bez) + ')"></span>' + esc(bezName(x.bez)) + '</span>' +
+            '<span class="m">' + esc(size) + '</span>' +
+            '<span class="tag ' + (x.privat ? "priv" : "") + '">' + (x.privat ? "Privat" : "Makler") + '</span>' +
+            (isNew ? '<span class="tag new">Neu</span>' : '') +
+            '<span class="rwhen">' + esc(relTime(x.firstSeen || x.published)) + '</span>' +
+          '</div>';
+        wrap.appendChild(a);
+      });
+      listEl.appendChild(wrap);
+    });
+  }
+
+  render();
+
+  var foot = document.getElementById("foot");
+  foot.innerHTML =
+    'Quelle: &ouml;ffentliche willhaben-Suche, entspricht dem Suchagenten &bdquo;Mietwohnungen&ldquo;. ' +
+    'T&auml;glich aktualisiert (GitHub Actions, ~09:00 Uhr Wien). Zeitfenster ' + winDays + ' Tage, neueste zuerst. ' +
+    '<a href="' + esc((data.search && data.search.url) || "#") + '" target="_blank" rel="noopener">Suche auf willhaben &ouml;ffnen</a>.';
+})();
+</script>
+</body>
+</html>
