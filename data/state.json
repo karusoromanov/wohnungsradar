@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-08-31T20:52:44.600Z",
- "lastRunAt": "2026-08-31T20:49:43.129Z",
+ "generatedAt": "2026-09-01T07:15:38.099Z",
+ "lastRunAt": "2026-08-31T20:52:44.600Z",
  "tz": "Europe/Vienna",
  "windowDays": 10,
  "search": {
@@ -8,6 +8,32 @@
   "label": "2 Zimmer · ab 40 m² · bis € 1.000 · 1040 / 1050 / 1100 / 1110"
  },
  "listings": [
+  {
+   "id": "2102949633",
+   "title": "BASTLERWOHNUNG",
+   "price": "€ 402,56",
+   "priceVal": 403,
+   "size": 61,
+   "bez": "10. Favoriten",
+   "plz": "1100",
+   "privat": false,
+   "published": "2026-09-01T07:05:16Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/bastlerwohnung-2102949633/",
+   "firstSeen": "2026-09-01T07:15:38.099Z"
+  },
+  {
+   "id": "1991941147",
+   "title": "Frisch sanierte, charmante 2-Zimmer-Wohnung im 10. Gemeindebezirk - direkt vom Eigentümer, provisionsfrei!!!",
+   "price": "€ 835",
+   "priceVal": 835,
+   "size": 53,
+   "bez": "10. Favoriten",
+   "plz": "1100",
+   "privat": false,
+   "published": "2026-08-24T14:37:36Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/frisch-sanierte-charmante-2-zimmer-wohnung-im-10-gemeindebezirk-direkt-vom-eigentuemer-provisionsfrei-1991941147/",
+   "firstSeen": "2026-09-01T07:15:38.099Z"
+  },
   {
    "id": "2055356590",
    "title": "helle zwei Zimmer Wohnung im Trostviertel, 10. Bezirk",
@@ -1258,7 +1284,7 @@
   },
   {
    "id": "1976318075",
-   "title": "Geförderte Genossenschaftswohnung für Wiener Wohnen Registriete, braucht kein Wohn-Ticket",
+   "title": "Derzeit in der Direktvergabe! Keine Anfragen bitte! Geförderte Genossenschaftswohnung für Wiener Wohnen Registriete, braucht kein Wohn-Ticket",
    "price": "€ 570,06",
    "priceVal": 570,
    "size": 52,
@@ -1266,7 +1292,7 @@
    "plz": "1110",
    "privat": true,
    "published": "2026-08-25T21:42:12Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/gefoerderte-genossenschaftswohnung-fuer-wiener-wohnen-registriete-braucht-kein-wohn-ticket-1976318075/",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/derzeit-in-der-direktvergabe-keine-anfragen-bitte-gefoerderte-genossenschaftswohnung-fuer-wiener-wohnen-registriete-braucht-kein-wohn-ticket-1976318075/",
    "firstSeen": "2026-08-25T21:42:12Z"
   },
   {
@@ -1460,7 +1486,7 @@
    "bez": "10. Favoriten",
    "plz": "1100",
    "privat": false,
-   "published": "2026-08-25T03:34:00Z",
+   "published": "2026-09-01T03:34:00Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/paerchenhit-mit-2-zimmern-am-waldmuellerpark-1737327343/",
    "firstSeen": "2026-08-25T03:34:00Z"
   },
@@ -1473,7 +1499,7 @@
    "bez": "10. Favoriten",
    "plz": "1100",
    "privat": false,
-   "published": "2026-08-25T00:38:53Z",
+   "published": "2026-09-01T00:38:53Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/wunderschoene-2-zimmerwohnung-mit-blick-ins-gruene-1548084226/",
    "firstSeen": "2026-08-25T00:38:53Z"
   },
