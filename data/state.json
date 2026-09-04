@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-09-03T07:16:20.956Z",
- "lastRunAt": "2026-09-02T07:15:38.148Z",
+ "generatedAt": "2026-09-04T07:15:34.181Z",
+ "lastRunAt": "2026-09-03T07:16:20.956Z",
  "tz": "Europe/Vienna",
  "windowDays": 10,
  "search": {
@@ -8,6 +8,162 @@
   "label": "2 Zimmer · ab 40 m² · bis € 1.000 · 1040 / 1050 / 1100 / 1110"
  },
  "listings": [
+  {
+   "id": "2009030381",
+   "title": "Loggiamiete in der Rinnböckstraße",
+   "price": "€ 948",
+   "priceVal": 948,
+   "size": 53,
+   "bez": "11. Simmering",
+   "plz": "1110",
+   "privat": false,
+   "published": "2026-09-04T07:06:59Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/loggiamiete-in-der-rinnboeckstrasse-2009030381/",
+   "firstSeen": "2026-09-04T07:15:34.181Z"
+  },
+  {
+   "id": "1018561897",
+   "title": "Klimatisierte 2-Zimmer Neubauwohnung mit Balkon & Tiefgarage | Provisionsfrei",
+   "price": "€ 950",
+   "priceVal": 950,
+   "size": 55,
+   "bez": "11. Simmering",
+   "plz": "1110",
+   "privat": true,
+   "published": "2026-09-03T22:30:28Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/klimatisierte-2-zimmer-neubauwohnung-mit-balkon-tiefgarage-provisionsfrei-1018561897/",
+   "firstSeen": "2026-09-04T07:15:34.181Z"
+  },
+  {
+   "id": "1524170744",
+   "title": "Q11 Leben in Simmering - Schöne 2-Zimmer-Wohnung mit Balkon und Deckenkühlung!",
+   "price": "€ 999",
+   "priceVal": 999,
+   "size": 53,
+   "bez": "11. Simmering",
+   "plz": "1110",
+   "privat": false,
+   "published": "2026-09-03T13:18:21Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/q11-leben-in-simmering-schoene-2-zimmer-wohnung-mit-balkon-und-deckenkuehlung-1524170744/",
+   "firstSeen": "2026-09-04T07:15:34.181Z"
+  },
+  {
+   "id": "2140656083",
+   "title": "Neuwertige 2-Zimmer-Wohnung mit Balkon & Garagenplatz bei U1 Oberlaa - Ablösefrei",
+   "price": "€ 976,80",
+   "priceVal": 977,
+   "size": 54,
+   "bez": "10. Favoriten",
+   "plz": "1100",
+   "privat": false,
+   "published": "2026-09-03T13:04:52Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/neuwertige-2-zimmer-wohnung-mit-balkon-garagenplatz-bei-u1-oberlaa-abloesefrei-2140656083/",
+   "firstSeen": "2026-09-04T07:15:34.181Z"
+  },
+  {
+   "id": "880089966",
+   "title": "Charmante 2-Zimmer-Wohnung mit Balkon I 6. Stock mit Lift I 1100 Wien",
+   "price": "€ 990",
+   "priceVal": 990,
+   "size": 66,
+   "bez": "10. Favoriten",
+   "plz": "1100",
+   "privat": false,
+   "published": "2026-09-03T11:59:43Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/charmante-2-zimmer-wohnung-mit-balkon-i-6-stock-mit-lift-i-1100-wien-880089966/",
+   "firstSeen": "2026-09-04T07:15:34.181Z"
+  },
+  {
+   "id": "1362092092",
+   "title": "Gemütliche 2-Zimmer-Neubauwohnung mit Balkon - zu mieten in 1050 Wien",
+   "price": "€ 974",
+   "priceVal": 974,
+   "size": 43,
+   "bez": "05. Margareten",
+   "plz": "1050",
+   "privat": false,
+   "published": "2026-09-03T11:18:56Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1050-margareten/gemuetliche-2-zimmer-neubauwohnung-mit-balkon-zu-mieten-in-1050-wien-1362092092/",
+   "firstSeen": "2026-09-04T07:15:34.181Z"
+  },
+  {
+   "id": "1586756688",
+   "title": "Vollmöblierte 2-Zimmer-Wohnung mit Balkon | 1100 Wien",
+   "price": "€ 997",
+   "priceVal": 997,
+   "size": 41,
+   "bez": "10. Favoriten",
+   "plz": "1100",
+   "privat": false,
+   "published": "2026-09-03T10:31:36Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/vollmoeblierte-2-zimmer-wohnung-mit-balkon-1100-wien-1586756688/",
+   "firstSeen": "2026-09-04T07:15:34.181Z"
+  },
+  {
+   "id": "1951866740",
+   "title": "Nachmieter WIENER WOHNEN! Vormerkschein bis 31.7.2026 für 2 Zimmer",
+   "price": "€ 636,61",
+   "priceVal": 637,
+   "size": 56,
+   "bez": "10. Favoriten",
+   "plz": "1100",
+   "privat": true,
+   "published": "2026-08-23T15:47:20Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/nachmieter-wiener-wohnen-vormerkschein-bis-31-7-2026-fuer-2-zimmer-1951866740/",
+   "firstSeen": "2026-09-04T07:15:34.181Z"
+  },
+  {
+   "id": "913378437",
+   "title": "LAGER___Bacherplatz",
+   "price": "€ 430",
+   "priceVal": 430,
+   "size": 51,
+   "bez": "05. Margareten",
+   "plz": "1050",
+   "privat": true,
+   "published": "2026-08-23T13:25:37Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1050-margareten/lager-bacherplatz-913378437/",
+   "firstSeen": "2026-09-04T07:15:34.181Z"
+  },
+  {
+   "id": "1636843565",
+   "title": "Stilvolle 2-Zimmer-Wohnung im 10. Bezirk -54m² | provisionsfrei",
+   "price": "€ 790",
+   "priceVal": 790,
+   "size": 54,
+   "bez": "10. Favoriten",
+   "plz": "1100",
+   "privat": true,
+   "published": "2026-08-23T12:22:07Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/stilvolle-2-zimmer-wohnung-im-10-bezirk-54m-provisionsfrei-1636843565/",
+   "firstSeen": "2026-09-04T07:15:34.181Z"
+  },
+  {
+   "id": "1448925492",
+   "title": "51,5 m² Wohnung in modernen Wohnhaus am Wienerberg zu vermieten",
+   "price": "€ 999",
+   "priceVal": 999,
+   "size": 51,
+   "bez": "10. Favoriten",
+   "plz": "1100",
+   "privat": true,
+   "published": "2026-08-23T10:31:07Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/51-5-m-wohnung-in-modernen-wohnhaus-am-wienerberg-zu-vermieten-1448925492/",
+   "firstSeen": "2026-09-04T07:15:34.181Z"
+  },
+  {
+   "id": "989690368",
+   "title": "Gut geschnittene Gemeindewohnung in perfekter Lage - direkt bei der U-Bahn-Station Troststraße",
+   "price": "€ 525,60",
+   "priceVal": 526,
+   "size": 44,
+   "bez": "10. Favoriten",
+   "plz": "1100",
+   "privat": true,
+   "published": "2026-08-23T08:47:04Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/gut-geschnittene-gemeindewohnung-in-perfekter-lage-direkt-bei-der-u-bahn-station-troststrasse-989690368/",
+   "firstSeen": "2026-09-04T07:15:34.181Z"
+  },
   {
    "id": "1833912720",
    "title": "Topsanierte Wohnung Nähe Reumannplatz",
@@ -32,19 +188,6 @@
    "privat": true,
    "published": "2026-09-02T21:28:43Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/2-zimmer-gemeindewohnung-in-wien-10-direktvergabe-mit-wiener-wohn-ticket-2116544342/",
-   "firstSeen": "2026-09-03T07:16:20.956Z"
-  },
-  {
-   "id": "1560401467",
-   "title": "Provisionsfrei: Unbefristeter 44m² Altbau mit 2 Zimmern und Lift - 1100 Wien",
-   "price": "€ 639,64",
-   "priceVal": 640,
-   "size": 44,
-   "bez": "10. Favoriten",
-   "plz": "1100",
-   "privat": false,
-   "published": "2026-09-02T20:43:48Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/provisionsfrei-unbefristeter-44m-altbau-mit-2-zimmern-und-lift-1100-wien-1560401467/",
    "firstSeen": "2026-09-03T07:16:20.956Z"
   },
   {
@@ -204,32 +347,6 @@
    "firstSeen": "2026-09-02T07:15:38.148Z"
   },
   {
-   "id": "896981121",
-   "title": "Herbortgasse 28/H043",
-   "price": "€ 853,26",
-   "priceVal": 853,
-   "size": 65,
-   "bez": "11. Simmering",
-   "plz": "1110",
-   "privat": false,
-   "published": "2026-09-01T18:27:27Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/herbortgasse-28-h043-896981121/",
-   "firstSeen": "2026-09-02T07:15:38.148Z"
-  },
-  {
-   "id": "1001416377",
-   "title": "Herbortgasse 28/H013",
-   "price": "€ 866,95",
-   "priceVal": 867,
-   "size": 65,
-   "bez": "11. Simmering",
-   "plz": "1110",
-   "privat": false,
-   "published": "2026-09-01T18:27:27Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/herbortgasse-28-h013-1001416377/",
-   "firstSeen": "2026-09-02T07:15:38.148Z"
-  },
-  {
    "id": "784048111",
    "title": "Provisionsfrei: Unbefristeter 56m² Erstbezug im topsanierten Altbau - 1100 Wien",
    "price": "€ 754,35",
@@ -240,19 +357,6 @@
    "privat": false,
    "published": "2026-09-01T14:09:57Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/provisionsfrei-unbefristeter-56m-erstbezug-im-topsanierten-altbau-1100-wien-784048111/",
-   "firstSeen": "2026-09-02T07:15:38.148Z"
-  },
-  {
-   "id": "814401495",
-   "title": "2 Zimmer mit Balkon - zu mieten in 1110 Wien",
-   "price": "€ 819",
-   "priceVal": 819,
-   "size": 44,
-   "bez": "11. Simmering",
-   "plz": "1110",
-   "privat": false,
-   "published": "2026-09-01T13:19:30Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/2-zimmer-mit-balkon-zu-mieten-in-1110-wien-814401495/",
    "firstSeen": "2026-09-02T07:15:38.148Z"
   },
   {
@@ -308,16 +412,42 @@
    "firstSeen": "2026-09-01T07:15:38.099Z"
   },
   {
-   "id": "1912463682",
+   "id": "1767094025",
+   "title": "2-Zimmer-Altbauwohnung am Keplerplatz zu vermieten!",
+   "price": "€ 999,63",
+   "priceVal": 1000,
+   "size": 63,
+   "bez": "10. Favoriten",
+   "plz": "1100",
+   "privat": false,
+   "published": "2026-09-03T14:44:09Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/2-zimmer-altbauwohnung-am-keplerplatz-zu-vermieten-1767094025/",
+   "firstSeen": "2026-08-31T20:11:03.431Z"
+  },
+  {
+   "id": "2107539233",
    "title": "Q11 Leben in Simmering - Schöne 2-Zimmer-Wohnung mit Balkon und Deckenkühlung!",
-   "price": "€ 999,48",
+   "price": "€ 999",
    "priceVal": 999,
    "size": 53,
    "bez": "11. Simmering",
    "plz": "1110",
    "privat": false,
-   "published": "2026-09-02T15:35:00Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/q11-leben-in-simmering-schoene-2-zimmer-wohnung-mit-balkon-und-deckenkuehlung-1912463682/",
+   "published": "2026-09-03T14:15:02Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/q11-leben-in-simmering-schoene-2-zimmer-wohnung-mit-balkon-und-deckenkuehlung-2107539233/",
+   "firstSeen": "2026-08-31T20:11:03.431Z"
+  },
+  {
+   "id": "1786341062",
+   "title": "ADELE - 2-Zimmerwohnung mit Balkon + hauseigenem Fitnessstudio, Pool & Gemeinschaftsdachterrasse!",
+   "price": "€ 990",
+   "priceVal": 990,
+   "size": 43,
+   "bez": "10. Favoriten",
+   "plz": "1100",
+   "privat": false,
+   "published": "2026-09-03T10:53:40Z",
+   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/adele-2-zimmerwohnung-mit-balkon-hauseigenem-fitnessstudio-pool-gemeinschaftsdachterrasse-1786341062/",
    "firstSeen": "2026-08-31T20:11:03.431Z"
   },
   {
@@ -396,45 +526,6 @@
    "privat": true,
    "published": "2026-08-20T21:39:59Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/helle-2-zimmer-genossenschaftswohnung-mit-loggia-balkon-klimaanlage-in-ruhiger-innenhoflage-1071654420/",
-   "firstSeen": "2026-08-31T20:11:03.431Z"
-  },
-  {
-   "id": "1767094025",
-   "title": "2-Zimmer-Altbauwohnung am Keplerplatz zu vermieten!",
-   "price": "€ 999,63",
-   "priceVal": 1000,
-   "size": 63,
-   "bez": "10. Favoriten",
-   "plz": "1100",
-   "privat": false,
-   "published": "2026-08-20T14:44:09Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/2-zimmer-altbauwohnung-am-keplerplatz-zu-vermieten-1767094025/",
-   "firstSeen": "2026-08-31T20:11:03.431Z"
-  },
-  {
-   "id": "2107539233",
-   "title": "Q11 Leben in Simmering - Schöne 2-Zimmer-Wohnung mit Balkon und Deckenkühlung!",
-   "price": "€ 999",
-   "priceVal": 999,
-   "size": 53,
-   "bez": "11. Simmering",
-   "plz": "1110",
-   "privat": false,
-   "published": "2026-08-20T14:15:02Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/q11-leben-in-simmering-schoene-2-zimmer-wohnung-mit-balkon-und-deckenkuehlung-2107539233/",
-   "firstSeen": "2026-08-31T20:11:03.431Z"
-  },
-  {
-   "id": "1786341062",
-   "title": "ADELE - 2-Zimmerwohnung mit Balkon + hauseigenem Fitnessstudio, Pool & Gemeinschaftsdachterrasse!",
-   "price": "€ 990",
-   "priceVal": 990,
-   "size": 43,
-   "bez": "10. Favoriten",
-   "plz": "1100",
-   "privat": false,
-   "published": "2026-08-20T10:53:40Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/adele-2-zimmerwohnung-mit-balkon-hauseigenem-fitnessstudio-pool-gemeinschaftsdachterrasse-1786341062/",
    "firstSeen": "2026-08-31T20:11:03.431Z"
   },
   {
@@ -609,8 +700,8 @@
   {
    "id": "2104712279",
    "title": "Provisionsfreie DG-Wohnung mit Weitblick über das Stadion der FK Austria zu vermieten",
-   "price": "€ 895",
-   "priceVal": 895,
+   "price": "€ 890",
+   "priceVal": 890,
    "size": 45,
    "bez": "10. Favoriten",
    "plz": "1100",
@@ -682,19 +773,6 @@
    "privat": true,
    "published": "2026-08-05T11:11:12Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1050-margareten/provisionsfrei-2-zimmer-neben-der-u4-1091034884/",
-   "firstSeen": "2026-08-31T20:11:03.431Z"
-  },
-  {
-   "id": "900645116",
-   "title": "Helle & ruhige Pärchenwohnung beim Sonnwendviertel",
-   "price": "€ 999",
-   "priceVal": 999,
-   "size": 50,
-   "bez": "10. Favoriten",
-   "plz": "1100",
-   "privat": true,
-   "published": "2026-08-04T15:27:10Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/helle-ruhige-paerchenwohnung-beim-sonnwendviertel-900645116/",
    "firstSeen": "2026-08-31T20:11:03.431Z"
   },
   {
@@ -945,19 +1023,6 @@
    "firstSeen": "2026-08-28T21:47:34Z"
   },
   {
-   "id": "1872106349",
-   "title": "GROSSZÜGIGE 2-ZIMMER-WOHNUNG IM 10.BEZIRK!",
-   "price": "€ 787,60",
-   "priceVal": 788,
-   "size": 55,
-   "bez": "10. Favoriten",
-   "plz": "1100",
-   "privat": false,
-   "published": "2026-08-28T16:18:00Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/grosszuegige-2-zimmer-wohnung-im-10-bezirk-1872106349/",
-   "firstSeen": "2026-08-28T16:18:00Z"
-  },
-  {
    "id": "1736556796",
    "title": "SONNIGE-2-ZIMMER-WOHNUNG-IM-10-BEZIRK!",
    "price": "€ 739,10",
@@ -1070,7 +1135,7 @@
    "bez": "10. Favoriten",
    "plz": "1100",
    "privat": false,
-   "published": "2026-08-28T08:26:00Z",
+   "published": "2026-09-04T08:26:00Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/ruhige-2-zimmerwohnung-mit-balkon-in-den-innenhof-1752360911/",
    "firstSeen": "2026-08-28T08:26:00Z"
   },
@@ -1096,7 +1161,7 @@
    "bez": "10. Favoriten",
    "plz": "1100",
    "privat": false,
-   "published": "2026-08-27T17:18:43Z",
+   "published": "2026-09-03T17:18:43Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/nette-2-zi-wohnung-mit-neuer-einbaukueche-1100-wien-1492090262/",
    "firstSeen": "2026-08-27T17:18:43Z"
   },
@@ -1109,7 +1174,7 @@
    "bez": "10. Favoriten",
    "plz": "1100",
    "privat": false,
-   "published": "2026-08-27T16:25:00Z",
+   "published": "2026-09-03T16:25:00Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/neubauprojekt/wien/wien-1100-favoriten/-viola-homes-hochwertige-mietwohnungen-beim-laaer-wald-zweitbezug-1792858904/",
    "firstSeen": "2026-08-27T16:25:00Z"
   },
@@ -1122,7 +1187,7 @@
    "bez": "11. Simmering",
    "plz": "1110",
    "privat": false,
-   "published": "2026-08-27T15:17:49Z",
+   "published": "2026-09-03T15:17:49Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/helle-2-zimmer-wohnung-nahe-u3-enkplatz-perfekte-lage-in-simmering-1021126263/",
    "firstSeen": "2026-08-27T15:17:49Z"
   },
@@ -1148,7 +1213,7 @@
    "bez": "10. Favoriten",
    "plz": "1100",
    "privat": false,
-   "published": "2026-08-27T12:16:49Z",
+   "published": "2026-09-03T12:16:49Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/gemuetliche-2-zimmer-wohnung-mit-balkon-1506679904/",
    "firstSeen": "2026-08-27T12:16:49Z"
   },
@@ -1161,7 +1226,7 @@
    "bez": "10. Favoriten",
    "plz": "1100",
    "privat": false,
-   "published": "2026-08-27T12:05:49Z",
+   "published": "2026-09-03T12:05:49Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/neubauprojekt/wien/wien-1100-favoriten/traumhaftes-neubauprojekt-mit-hochwertiger-ausstattung-und-freiflaechen-in-zentraler-lage-1539308692/",
    "firstSeen": "2026-08-27T12:05:49Z"
   },
@@ -1174,7 +1239,7 @@
    "bez": "10. Favoriten",
    "plz": "1100",
    "privat": false,
-   "published": "2026-08-27T10:19:03Z",
+   "published": "2026-09-03T10:19:03Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/sehr-gepflegte-2-zimmer-wohnung-in-zentraler-lage-zellmann-immobilien-1501336608/",
    "firstSeen": "2026-08-27T10:19:03Z"
   },
@@ -1187,7 +1252,7 @@
    "bez": "10. Favoriten",
    "plz": "1100",
    "privat": false,
-   "published": "2026-08-27T09:49:00Z",
+   "published": "2026-09-03T09:49:00Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/schoene-2-zimmer-neubauwohnung-zwischen-matzleinsdorfer-platz-und-waldmuellerpark-1828535814/",
    "firstSeen": "2026-08-27T09:49:00Z"
   },
@@ -1200,7 +1265,7 @@
    "bez": "10. Favoriten",
    "plz": "1100",
    "privat": true,
-   "published": "2026-08-27T09:38:42Z",
+   "published": "2026-09-03T09:38:42Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/ueber-den-daechern-1715781125/",
    "firstSeen": "2026-08-27T09:38:42Z"
   },
@@ -1268,19 +1333,6 @@
    "published": "2026-08-26T19:46:19Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/wiener-wohnticket-ab-dem-24-juni-2026-kleine-aber-feine-2-zimmer-wohnung-in-u3-zippererstrasse-naehe-sucht-einen-nachmieter-2061064425/",
    "firstSeen": "2026-08-26T19:46:19Z"
-  },
-  {
-   "id": "1840654400",
-   "title": "2-Zimmer-Genossenschaftswohnung mit Balkon in ruhiger Lage in Kaiserebersdorf - 48,73 m²",
-   "price": "€ 648,05",
-   "priceVal": 648,
-   "size": 49,
-   "bez": "11. Simmering",
-   "plz": "1110",
-   "privat": true,
-   "published": "2026-08-26T19:11:02Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1110-simmering/2-zimmer-genossenschaftswohnung-mit-balkon-in-ruhiger-lage-in-kaiserebersdorf-48-73-m-1840654400/",
-   "firstSeen": "2026-08-26T19:11:02Z"
   },
   {
    "id": "1262818130",
@@ -1606,58 +1658,6 @@
    "published": "2026-08-25T10:01:28Z",
    "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/nette-64m2-wohnung-am-wienerberg-942891515/",
    "firstSeen": "2026-08-25T10:01:28Z"
-  },
-  {
-   "id": "1737327343",
-   "title": "PÄRCHENHIT mit 2-Zimmern - AM WALDMÜLLERPARK!",
-   "price": "€ 953,76",
-   "priceVal": 954,
-   "size": 48,
-   "bez": "10. Favoriten",
-   "plz": "1100",
-   "privat": false,
-   "published": "2026-09-01T03:34:00Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/paerchenhit-mit-2-zimmern-am-waldmuellerpark-1737327343/",
-   "firstSeen": "2026-08-25T03:34:00Z"
-  },
-  {
-   "id": "1548084226",
-   "title": "Wunderschöne 2-Zimmerwohnung mit Blick ins Grüne",
-   "price": "€ 969",
-   "priceVal": 969,
-   "size": 42,
-   "bez": "10. Favoriten",
-   "plz": "1100",
-   "privat": false,
-   "published": "2026-09-01T00:38:53Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/wunderschoene-2-zimmerwohnung-mit-blick-ins-gruene-1548084226/",
-   "firstSeen": "2026-08-25T00:38:53Z"
-  },
-  {
-   "id": "814189406",
-   "title": "Ruhige, WG-taugliche 2-Zimmer Wohnung in zentraler Lage",
-   "price": "€ 899",
-   "priceVal": 899,
-   "size": 67,
-   "bez": "05. Margareten",
-   "plz": "1050",
-   "privat": true,
-   "published": "2026-08-24T22:34:45Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1050-margareten/ruhige-wg-taugliche-2-zimmer-wohnung-in-zentraler-lage-814189406/",
-   "firstSeen": "2026-08-24T22:34:45Z"
-  },
-  {
-   "id": "1393561122",
-   "title": "Helle 2 -Zimmer Gemeindewohnung in Favoriten. Wiener Wohnen Ticket erforderlich",
-   "price": "€ 527",
-   "priceVal": 527,
-   "size": 48,
-   "bez": "10. Favoriten",
-   "plz": "1100",
-   "privat": true,
-   "published": "2026-08-24T10:36:49Z",
-   "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/wien/wien-1100-favoriten/helle-2-zimmer-gemeindewohnung-in-favoriten-wiener-wohnen-ticket-erforderlich-1393561122/",
-   "firstSeen": "2026-08-24T10:36:49Z"
   }
  ]
 }
